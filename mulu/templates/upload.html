@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>mlm upload</title>
+</head>
+<body>
+{%if name%}{{name}}
+{%else%}nopic
+{%endif%}
+<li><form method="post" enctype="multipart/form-data"></li>
+	{%csrf_token%}
+{{form}}
+<button type="submit">Upload</button>
+</form>
+</body>
+</html>
